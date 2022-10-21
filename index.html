@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <main class="container"> 
+    <header>
+        <nav class="nav"> 
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <!-- 
+                <li><a href="#" onclick="alert('Loading wather')">Burbank</a></li>
+                <li><a href="#" onclick="alert('Loading wather')">Chicago</a></li>
+                <li><a href="#" onclick="alert('Loading wather')">Dallas</a></li>-->
+                <li><a class="btn" href="#">Burbank</a></li>
+                <li><a class="btn" href="#">Chicago</a></li>
+                <li><a class="btn" href="#">Dallas</a></li>
+
+            </ul>
+        </nav>    
+    </header>
+    <section class="tiempo">
+        <h1 class="title-tiempo"> San Jose </h1>
+        <section class="selector">
+            <label>Show temperature in</label>
+                <select onchange="temperatura()">
+                    <option  class="option" value="C">C</option>
+                    <option  class="option" value="F">F</option>
+                </select>
+        </section>
+    </section>
+
+    <article class=semana>
+        <section class="dias">
+           <h1 class=title-dias> To day</h1>
+           <img class="img" src="assets/some_rain.png"  alt="rain"> 
+           <p class="some"> some rain </p>
+                <section class="temp">
+                <p class="max"> 24 </p> 
+                <p class="min"> 18 </p>
+                </section>
+        </section>
+        <section class="dias">
+            <h1 class=title-dias> Tomorrow</h1>
+            <img class="img" src="assets/some_sun.png"  alt="sun"> 
+            <p class="some"> some sun </p>
+            <section class="temp">
+                <p class="max"> 27 </p>
+                <p class="min"> 19 </p>
+            </section>
+        </section>
+        <section class="dias">
+            <h1 class=title-dias> Friday</h1>
+            <img class="img" src="assets/some_clouds.png"  alt="clouds">
+            <p class="some"> some clouds </p> 
+            <section class="temp">
+                <p class="max"> 21 </p>
+                <p class="min"> 16 </p>
+            </section>
+        </section>
+        <section class="dias">
+            <h1 class=title-dias> Saturday</h1>
+            <img class="img" src="assets/some_sun.png" alt="sun"> 
+            <p class="some"> some sun </p>
+            <section class="temp">
+                <p class="max"> 26 </p>
+                <p class="min"> 21 </p>
+            </section>
+        </section>
+    </article>
+</main>
+
+    <article class="cookies" id="accept">
+        <section class="sec-cookies">
+            <img class="img-cookies" src="assets/cookie.png" width="80" height="80" alt="cookies"> 
+            <section class="sec-cookies2"> 
+                <h2 class="title-cookies">Stop! Cookie time</h2>
+                <p class="p-cookes">We use cookies (sadly not the edible ones) to personalize content and ads,to provide social media features and to  analyse our traffic. <a href="#">Read more.</a></p>
+             </section>
+          <!--   <button onclick="remover()" class="accept"> I Accept</button> -->
+             <button  class="accept"> I Accept</button>
+        </section>
+    </article>  
+
+
+    <script src="app.js"></script>
+</body>
+</html>
